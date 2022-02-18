@@ -14,11 +14,28 @@ Amount = 20 x 50 = 1000
 
 
 Distance -> 50
-Amount = 30 x 50 + (50-30) x 40 = 2300*/
-
-#include <stdio.h>
+Amount = 30 x 50 + (50-30) 
+  
+  #include <stdio.h>
 
 int main() {
-  
-  return 0;
-}
+
+  float distance, price;
+
+  printf("Input the distance travelled : ");
+  scanf("%f", &distance);
+  printf("\n");
+
+  printf("The distance travelled is : %.f\n", distance);
+
+  if (distance <= 30){
+    price = distance*50;
+  }  
+  else{
+    price = (30*50) + (distance - 30)*40;
+  }
+
+ printf("The amount to be paid is Rs. %.2f\n", price);
+
+  return 0 ;
+  }
